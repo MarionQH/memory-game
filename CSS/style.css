@@ -1,1 +1,88 @@
-body {background: linear-gradient(90deg, rgba(88, 82, 193, 1) 0%, rgba(63, 9, 121, 1) 35%, rgba(122, 11, 149, 1) 100%);}
+body {background:radial-gradient(circle, rgba(143, 90, 176, 1) 0%, rgba(140, 70, 252, 1) 100%);}
+
+h1 {text-align: center; color: aliceblue; font-size:5em;}
+
+ul {
+    list-style: none;
+}
+
+.rules {
+    text-align: center; 
+    background: radial-gradient(#6e6d6d, #303031);
+    color: aliceblue;
+    margin-left: 30%;
+    margin-right: 30%;
+    border: 0.5em solid rgb(94, 93, 93);
+    border-radius: 30px;
+    padding: 10px 0px 10px 0px;
+    
+    }
+
+    .firstPicture {
+          width: 80%;
+          height: auto;
+          max-width: 100%;
+    }
+
+    form {
+
+        text-align: center;
+            background: radial-gradient(#6e6d6d, #303031);
+            color: aliceblue;
+            border: 0.5em solid rgb(94, 93, 93);
+            border-radius: 30px;
+            width: 250px;
+            height: 270px;
+           
+    }
+
+  * {
+       padding: 0;
+       margin: 0;
+       box-sizing: border-box;
+  }
+
+  .game {
+       width: 640px;
+       height: 640px;
+       margin: auto;
+       display: flex;
+       flex-wrap: wrap;
+       perspective: 1000px;
+  }
+
+  .memory-card {
+       width: calc(25% - 10px);
+       height: calc(33.333% - 10px);
+       margin: 5px;
+       position: relative;
+       transform: scale(1);
+       transform-style: preserve-3d;
+       transition: transform .5s;
+       box-shadow: 1px 1px 1px rgba(0, 0, 0, .3);
+
+  .front-face,
+  .back-face {
+       width: 100%;
+       height: 100%;
+       padding: 20px;
+       position: absolute;
+       border-radius: 5px;
+       background: #64246d;
+       backface-visibility: hidden;
+  }
+
+  .front-face {
+       transform: rotateY(180deg);
+  }
+    }
+
+    .memory-card:active {
+         transform: scale(0.70);
+         transition: transform .2s;
+    }
+
+    .flip {
+         transform: rotateY(180deg);
+    }
+   
