@@ -21,26 +21,31 @@
             <li class="navElement"><a href="profil.html">Profil</a></li>
             <li class="navElement"><a href="Jouer.html">Jouer</a></li>
         </ul> 
-<form>
+    </nav>
+<form class="register">
     <div>
-        <label for="name"> Nom: </label> <br>
+        <label for="name"> Nom: </label> 
+        <span id="namefail" hidden="true"> nom invalide</span><br>
         <input type="text" id="name" name="name" required><br>
         </div>
     </div>
     <div>
-        <label for="name"> Mail: </label><br>
+        <label for="email"> Mail: </label>
+        <span id="mailfail" hidden="true"> Email invalide</span><br>
         <input type="email" id="email" name="email" required><br>
     </div>
     <div>
-        <label for="name"> Mot de passe: </label><br>
+        <label for="password"> Mot de passe: </label>
+        <span id="passwordfail" hidden="true"> mot de passe invalide</span><br>
         <input type="password" id="password" name="password" required><br>
     </div>
     <div>
-        <label for="name"> Vérifiez votre mot de passe: </label><br>
+        <label for="name"> Vérifiez votre mot de passe: </label>
+        <span id="secondPasswordfail" hidden="true"> mot de passe invalide</span><br>
         <input type="password" id="verifiedPassword" name="password" required><br>
-    </div>
-    <button type="button" class="btn btn-success">S'inscrire</button>
+    </div><br>
+    <button id="submit" type="button" class="btn btn-success">S'inscrire</button>
 </form>
-        
+<script src="./JS/register.js"></script>        
 </body>
 </html>

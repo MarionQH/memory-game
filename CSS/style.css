@@ -1,88 +1,180 @@
-body {background:radial-gradient(circle, rgba(143, 90, 176, 1) 0%, rgba(140, 70, 252, 1) 100%);}
+body {
+  background: radial-gradient(
+    circle,
+    rgba(143, 90, 176, 1) 0%,
+    rgba(140, 70, 252, 1) 100%
+  );
+}
 
-h1 {text-align: center; color: aliceblue; font-size:5em;}
+h1 {
+  text-align: center;
+  color: aliceblue;
+  font-size: 5em;
+}
 
+.nav {
+  padding-left: 20px;
+  margin-bottom: 4%;
+  margin-top: 6%;
+  display: block;
+}
 ul {
-    list-style: none;
+  list-style: none;
+}
+.nav li {
+  list-style-type: none;
+  display: inline;
+  padding: 1%;
+  background-color: #64246d;
+  border: solid 0.2em rgb(63, 2, 48);
+  border-radius: 10%;
+}
+
+a {
+  text-decoration: none;
+  color: aliceblue;
 }
 
 .rules {
-    text-align: center; 
-    background: radial-gradient(#6e6d6d, #303031);
-    color: aliceblue;
-    margin-left: 30%;
-    margin-right: 30%;
-    border: 0.5em solid rgb(94, 93, 93);
-    border-radius: 30px;
-    padding: 10px 0px 10px 0px;
-    
-    }
+  text-align: center;
+  font-size: 120%;
+  background: radial-gradient(#6e6d6d, #303031);
+  color: aliceblue;
+  margin-left: 30%;
+  margin-right: 30%;
+  border: 0.5em solid rgb(94, 93, 93);
+  border-radius: 30px;
+  padding: 10px 0px 10px 0px;
+}
+#rules2 {
+  text-decoration: underline;
+  font-weight: bold;
+}
 
-    .firstPicture {
-          width: 80%;
-          height: auto;
-          max-width: 100%;
-    }
+.firstPicture {
+  width: 80%;
+  height: auto;
+  max-width: 100%;
+}
 
-    form {
+.register {
+  text-align: center;
+  background: radial-gradient(#6e6d6d, #303031);
+  color: aliceblue;
+  border: 0.5em solid rgb(94, 93, 93);
+  border-radius: 30px;
+  margin-left: 40%;
+  margin-right: 40%;
+  padding: 2%;
+  height: 50%;
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+ 
+}
+.connect {
+  text-align: center;
+  font-size: 100%;
+  background: radial-gradient(#6e6d6d, #303031);
+  color: aliceblue;
+  border: 0.5em solid rgb(94, 93, 93);
+  border-radius: 30px;
+  margin-left: 40%;
+  margin-right: 40%;
+  padding: 2%;
+  height: 50%;
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+}
 
-        text-align: center;
-            background: radial-gradient(#6e6d6d, #303031);
-            color: aliceblue;
-            border: 0.5em solid rgb(94, 93, 93);
-            border-radius: 30px;
-            width: 250px;
-            height: 270px;
-           
-    }
+.profil {
+  text-align: center;
+  font-size: 100%;
+  background: radial-gradient(#6e6d6d, #303031);
+  color: aliceblue;
+  border: 0.5em solid rgb(94, 93, 93);
+  border-radius: 30px;
+  margin-left: 40%;
+  margin-right: 40%;
+  padding: 2%;
+  height: 50%;
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+}
 
-  * {
-       padding: 0;
-       margin: 0;
-       box-sizing: border-box;
-  }
 
-  .game {
-       width: 640px;
-       height: 640px;
-       margin: auto;
-       display: flex;
-       flex-wrap: wrap;
-       perspective: 1000px;
-  }
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
 
-  .memory-card {
-       width: calc(25% - 10px);
-       height: calc(33.333% - 10px);
-       margin: 5px;
-       position: relative;
-       transform: scale(1);
-       transform-style: preserve-3d;
-       transition: transform .5s;
-       box-shadow: 1px 1px 1px rgba(0, 0, 0, .3);
+.game {
+  width: 640px;
+  height: 640px;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  perspective: 1000px;
+  margin-top: 5%;
+}
+
+.memory-card {
+  width: calc(25% - 10px);
+  height: calc(33.333% - 10px);
+  margin: 5px;
+  position: relative;
+  transform: scale(1);
+  transform-style: preserve-3d;
+  transition: transform 0.5s;
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
 
   .front-face,
   .back-face {
-       width: 100%;
-       height: 100%;
-       padding: 20px;
-       position: absolute;
-       border-radius: 5px;
-       background: #64246d;
-       backface-visibility: hidden;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    position: absolute;
+    border-radius: 5px;
+    background: #64246d;
+    backface-visibility: hidden;
   }
 
   .front-face {
-       transform: rotateY(180deg);
+    transform: rotateY(180deg);
   }
-    }
+}
 
-    .memory-card:active {
-         transform: scale(0.70);
-         transition: transform .2s;
-    }
+.memory-card:active {
+  transform: scale(0.7);
+  transition: transform 0.2s;
+}
 
-    .flip {
-         transform: rotateY(180deg);
-    }
-   
+.flip {
+  transform: rotateY(180deg);
+}
+
+.youWin {
+  color: aliceblue;
+  font-size: 40px;
+}
+
+.countFlip {
+  color: aliceblue;
+  font-size: 35px;
+}
+
+.text {
+  color: aliceblue;
+  font-size: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#mailfail, #passwordfail, #secondPasswordfail, #namefail {
+  color: rgb(112, 4, 4);
+}
+
