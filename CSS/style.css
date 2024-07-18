@@ -13,21 +13,29 @@ h1 {
 }
 
 .nav {
-  padding-left: 20px;
-  margin-bottom: 4%;
-  margin-top: 6%;
+  margin-bottom: 2%;
+  margin-top: 2%;
   display: block;
+ 
 }
 ul {
   list-style: none;
+}
+.navul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .nav li {
   list-style-type: none;
   display: inline;
   padding: 1%;
+  margin: 0.5%;
   background-color: #64246d;
   border: solid 0.2em rgb(63, 2, 48);
   border-radius: 10%;
+ 
 }
 
 a {
@@ -79,8 +87,8 @@ a {
   color: aliceblue;
   border: 0.5em solid rgb(94, 93, 93);
   border-radius: 30px;
-  margin-left: 40%;
-  margin-right: 40%;
+  margin-left: 35%;
+  margin-right: 35%;
   padding: 2%;
   height: 50%;
   width: 30%;
@@ -95,8 +103,8 @@ a {
   color: aliceblue;
   border: 0.5em solid rgb(94, 93, 93);
   border-radius: 30px;
-  margin-left: 40%;
-  margin-right: 40%;
+  margin-left: 35%;
+  margin-right: 35%;
   padding: 2%;
   height: 50%;
   width: 30%;
@@ -178,3 +186,19 @@ a {
   color: rgb(112, 4, 4);
 }
 
+input {
+width: 95%;
+border: 0.3em solid rgb(184, 177, 177);
+}
+
+#datafalse {
+  text-align: center;
+  color: brown;
+  font-size: 200%
+}
+
+#datatrue {
+  text-align: center;
+  color: aliceblue;
+  font-size: 200%;
+}

@@ -14,7 +14,7 @@
 <h1>ENI - MEMORY - se connecter</h1>
 
 <nav class="nav">
-    <ul>
+    <ul class="navul">
         <li class="navElement"><a href="index.html">Accueil</a></li>
         <li class="navElement"><a href="sInscrire.html">S'inscrire</a></li>
         <li class="navElement"><a href="seConnecter.html">Se connecter</a></li>
@@ -22,10 +22,12 @@
         <li class="navElement"><a href="Jouer.html">Jouer</a></li>
     </ul>
 </nav>
-<form class="connect">
 
+<p id="datatrue"></p><br>
+<form class="connect">
+<p id="datafalse"></p>
     <div>
-        <label for="emaim"> Mail: </label><br>
+        <label for="email"> Mail: </label><br>
         <input type="email" id="email" name="email" required><br>
     </div>
     <div>
@@ -33,9 +35,10 @@
         <input type="password" id="password" name="password" required><br>
     </div><br>
 
-    <button type="button" class="btn btn-success">S'inscrire</button>
+    <button id="submit" type="button" class="btn btn-success">S'inscrire</button>
     
 </form>
+<script type="module" src="./JS/connect.js"></script> 
 </body>
 
 </html>
