@@ -13,7 +13,7 @@ h1 {
 }
 
 .nav {
-  margin-bottom: 2%;
+  margin-bottom: 1%;
   margin-top: 2%;
   display: block;
  
@@ -71,13 +71,14 @@ a {
   color: aliceblue;
   border: 0.5em solid rgb(94, 93, 93);
   border-radius: 30px;
-  margin-left: 40%;
-  margin-right: 40%;
+  margin-left: 35%;
+  margin-right: 35%;
   padding: 2%;
   height: 50%;
-  width: 20%;
+  width: 30%;
   display: flex;
   flex-direction: column;
+  font-size: 100%;
  
 }
 .connect {
@@ -126,7 +127,6 @@ a {
   display: flex;
   flex-wrap: wrap;
   perspective: 1000px;
-  margin-top: 5%;
 }
 
 .memory-card {
@@ -166,12 +166,17 @@ a {
 
 .youWin {
   color: aliceblue;
-  font-size: 40px;
+  font-size: 40px; 
+  margin-left: 35%;
+  
+   
 }
 
 .countFlip {
   color: aliceblue;
-  font-size: 35px;
+  font-size: 40px;
+  margin-left: 35%;
+  
 }
 
 .text {

@@ -9,13 +9,11 @@ let enteredEmail = "";
 let enteredPassword = "";
 
 document.getElementById("email").addEventListener("focusout", () => {
-  let enteredEmail = document.getElementById("email").value;
-  return enteredEmail;
+  enteredEmail = document.getElementById("email").value;
 });
 
 document.getElementById("password").addEventListener("blur", () => {
-  let enteredPassword = document.getElementById("password").value;
-  return enteredPassword;
+  enteredPassword = document.getElementById("password").value;
 });
 
 /* essayer avec Array.prototype.find()??? */
@@ -24,18 +22,18 @@ document.getElementById("submit").addEventListener("click", (event) => {
   for (let i = 0; i < usersData.length; i++) {
     let matchEmail = usersData[i].mail;
     let matchPassword = usersData[i].password;
-    console.log(matchEmail);
-    console.log(matchPassword);
+    
     if (matchEmail == enteredEmail && matchPassword == enteredPassword) {
       console.log("you are conected");
-      let storedname = localStorage.getItem("name");
-      document.getElementById("datatrue").innerText =
-        "Bonjour" && storedname && "!!!";
+      let storedname = usersData[i].name
+      document.getElementById("datatrue").innerText = "Bonjour " + storedname + " !!!";
+      document.getElementById("datafalse").innerText = ""
+      return
     } else {
       event.preventDefault();
       console.log("echec");
-      document.getElementById("datafalse").innerText =
-        "identifiants incorrects";
+      document.getElementById("datafalse").innerText = "identifiants incorrects";
+      document.getElementById("datatrue").innerText =""
     }
   }
 });

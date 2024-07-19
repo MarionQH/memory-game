@@ -1,5 +1,5 @@
-const cards = document.querySelectorAll(".memory-card");
 
+const cards = document.querySelectorAll(".memory-card");
 let hasFlippedCard = false;
 let lockBoard = false;
 let firstCard, secondCard;
@@ -61,15 +61,6 @@ function resetBoard() {
   [firstCard, secondCard] = [null, null];
 }
 
-(function shuffle() {
-  cards.forEach((card) => {
-    let randomPos = Math.floor(Math.random() * 12);
-    card.style.order = randomPos;
-  });
-})();
-
-cards.forEach((card) => card.addEventListener("click", flipCard));
-
 function youWin() {
   const youWinParty = document.querySelector(".youWin");
   const shotsNumber = document.querySelector(".countFlip");
@@ -80,8 +71,22 @@ function youWin() {
   }
 }
 
+
+(function shuffle() {
+  cards.forEach((card) => {
+    let randomPos = Math.floor(Math.random() * 12);
+    card.style.order = randomPos;
+  });
+})();
+
+cards.forEach((card) => card.addEventListener("click", flipCard));
+
 document.addEventListener("keydown", function (event) {
   if (event.code === "Space") {
     location.reload();
   }
 });
+
+
+
+
